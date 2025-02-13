@@ -3,6 +3,7 @@ package HW2;
 public class BankAccount {
     private int acctNumber;
     private int balance;
+    private double interestRate;
 
     /**
      * Constructor for creating an Account object with
@@ -11,11 +12,13 @@ public class BankAccount {
     public BankAccount() {
         balance = 0;
         acctNumber = 0;
+        interestRate = .25;
     }
 
-    public BankAccount(int initAcctNumber) {
+    public BankAccount(int initAcctNumber, float initInterestRate) {
         acctNumber = initAcctNumber;
         balance = 0;
+        interestRate = initInterestRate;
     }
 
     /**
@@ -57,6 +60,29 @@ public class BankAccount {
     public int getBalance() {
         return balance;
     }
+    /**
+     * check the interestRate and returns it
+     * 
+     */
+    public double getInterestRate(){
+        return interestRate;
+
+    }
+    /**
+     * returns the current balance in dollar form
+     */
+    public int getDollars(){
+        return balance/100;
+    }
+    /**
+     * calculates the reward amount and adds it to the balance
+     */
+
+     public void addRewardsAmount(){
+        int rewardAmount = balance/100;
+        balance = balance + rewardAmount;
+
+     }
     
     /**
      * display the account number and balance on the screen

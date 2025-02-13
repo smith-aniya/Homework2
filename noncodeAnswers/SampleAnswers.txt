@@ -1,1 +1,42 @@
 Upload all your non-code answer in this folder.
+COMP 132 - Homework # 2
+Unit Testing and ArrayList Collections
+Total Points: 40
+
+
+Part 1 [15 points, uses BankAccount.java]
+
+	•	If we wanted to add a new member data field that would be used to store the interest that is applied to the account, which data type should we use?
+    You could use a double.
+
+
+
+Part 3 [5 points] 
+	•	What output, if any, would be produced by the following code snippets? You should figure this out by hand, do not run them on a computer, please show your thought process.
+	•	 
+for (int i=3; i>=7; i++) { 
+System.out.println(i); 
+}
+
+Starting from the number 3 this program should print out numbers up untill 7.  the variable i that we are comparing to is initially set to 3, the test case is while i is less than 7
+and i++ incriments i by 1 every run through of the loop.
+
+
+
+
+
+
+
+
+
+
+
+
+
+	•	
+int x = 1; 
+for (int k=24; k>0; k=k-x) { 
+System.out.println(k); 
+x++; 
+}
+
